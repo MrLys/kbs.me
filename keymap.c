@@ -76,21 +76,21 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         if (get_mods() & MOD_MASK_SHIFT) {
           unregister_code(KC_LSFT);
-          tap_code16(RALT(KC_6));
-          return true;
-        } else{
           tap_code16(RALT(KC_RBRC));
+          register_code(KC_LSFT);
+          return true;
+        } else {
+          tap_code16(RALT(KC_4));
         }
       }
+      return false;
     case DV_PERC:
       if (record->event.pressed) {
         if (get_mods() & MOD_MASK_SHIFT) {
           tap_code(KC_5);
           return true;
         } else {
-          register_code(KC_LSFT);
-          tap_code(KC_6);
-          unregister_code(KC_LSFT);
+          tap_code16(S(KC_6));
         }
       }
       return false;
