@@ -75,13 +75,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		    KC_TAB,     DV_SCOL,        DV_COMM,      DV_DOT,     KC_P,       KC_Y,       KC_F,       KC_G,       KC_C,       KC_R,           KC_L,       DV_QM,      DV_RBRC,    KC_ENT,         KC_PGUP,
 		    KC_ESC,     DV_A,           DV_O,         DV_E,       KC_U,       KC_I,       KC_D,       KC_H,       KC_T,       KC_N,           KC_S,       DV_MINS,    DV_BSLS,                    TO(3),
 		    KC_LSFT,    MO(2),          DV_QUOT,      KC_Q,       KC_J,       KC_K,       KC_X,       KC_B,       KC_M,       KC_W,           KC_V,       KC_Z,       KC_RSFT,    KC_UP,          KC_END,
-		    KC_LCTL,    KC_LGUI,        KC_LALT,                              LT(1, KC_SPC),                                                  KC_RALT,    KC_RGUI,    KC_LEFT,    KC_DOWN,        KC_RGHT
+		    KC_LCTL,    LT(1, KC_LGUI),        KC_LALT,                              KC_SPC,                                                         KC_RALT,    KC_RGUI,    KC_LEFT,    KC_DOWN,        KC_RGHT
     ),
 	[_NAVIGATION] = LAYOUT_65_iso_blocker(
         KC_ESC,     KC_NO,          KC_NO,        KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,
         KC_NO,      KC_NO,          KC_UP,        KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_UP,      KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_TRNS,        KC_NO,
         KC_ESC,     KC_LEFT,        KC_DOWN,      KC_RGHT,    KC_NO,      KC_NO,      KC_NO,      KC_LEFT,    KC_DOWN,    KC_RGHT,        KC_L,       KC_NO,      KC_NO,                      KC_NO,
-        KC_NO,      KC_NO,          KC_NO,        KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_UP,          KC_NO,
+        KC_NO,      MO(2),          KC_NO,        KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_UP,          KC_NO,
         KC_LCTL,    LGUI(KC_NO),    KC_LALT,    /*----------------------------space-----------------------------*/        KC_SPC,         KC_NO,      TO(2),      KC_LEFT,    KC_DOWN,        KC_RGHT
     ),
 	[_SYMBOLS] = LAYOUT_65_iso_blocker(
