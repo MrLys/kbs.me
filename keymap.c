@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		    KC_TAB,     DV_SCOL,        DV_COMM,      DV_DOT,     KC_P,       KC_Y,       KC_F,       KC_G,       KC_C,       KC_R,           KC_L,       DV_QM,      DV_RBRC,    KC_ENT,         KC_PGUP,
 		    KC_ESC,     DV_A,           DV_O,         DV_E,       KC_U,       KC_I,       KC_D,       KC_H,       KC_T,       KC_N,           KC_S,       DV_MINS,    DV_BSLS,                    TO(3),
 		    KC_LSFT,    MO(2),          DV_QUOT,      KC_Q,       KC_J,       KC_K,       KC_X,       KC_B,       KC_M,       KC_W,           KC_V,       KC_Z,       KC_RSFT,    KC_UP,          KC_END,
-		    KC_LCTL,    LT(1, KC_LGUI),        KC_LALT,                              KC_SPC,                                                         KC_RALT,    KC_RGUI,    KC_LEFT,    KC_DOWN,        KC_RGHT
+		    KC_LCTL,    LT(1, KC_LGUI), KC_LALT,      /*----------------------------space-----------------------------*/      KC_SPC,         KC_RALT,    KC_RGUI,    KC_LEFT,    KC_DOWN,        KC_RGHT
     ),
 	[_NAVIGATION] = LAYOUT_65_iso_blocker(
         KC_ESC,     KC_NO,          KC_NO,        KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,
@@ -89,14 +89,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TRNS,    KC_TRNS,        KC_TRNS,      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    DV_7,       DV_6,           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,        KC_TRNS,
         KC_ESC,     KC_TRNS,        KC_TRNS,      DV_0/***/,  DV_9/*=*/,  KC_TRNS,    KC_TRNS,    DV_1,       DV_5,       DV_3,           DV_2,       KC_TRNS,    KC_TRNS,                    KC_TRNS,
         KC_TRNS,    TO(1),          KC_TRNS,      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_UP,          KC_TRNS,
-        KC_LCTL,    LGUI(KC_TRNS),  KC_LALT,    /*----------------------------space-----------------------------*/        LT(1, KC_SPC),  KC_TRNS,    TO(0),      KC_LEFT,    KC_DOWN,        KC_RGHT
+        KC_LCTL,    LGUI(KC_TRNS),  KC_LALT,    /*----------------------------space-----------------------------*/        KC_SPC,         KC_TRNS,    TO(0),      KC_LEFT,    KC_DOWN,        KC_RGHT
     ),
 	[_QWERTY] = LAYOUT_65_iso_blocker(
-        QK_GESC,    KC_1,           KC_2,         KC_3,       KC_4,       KC_5,       KC_6,       KC_7,       KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC,        KC_HOME,
-		    KC_TAB,     KC_Q,           KC_W,         KC_E,       KC_R,       KC_T,       KC_Y,       KC_U,       KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_ENT,         KC_PGUP,
-		    KC_CAPS,    KC_A,           KC_S,         KC_D,       KC_F,       KC_G,       KC_H,       KC_J,       KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_BSLS,                 TO(0),
-		    KC_LSFT,    KC_NUBS,        KC_Z,         KC_X,       KC_C,       KC_V,       KC_B,       KC_N,       KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,                 KC_UP,   KC_END,
-		    KC_LCTL,    KC_LGUI,        KC_LALT,                            KC_SPC,                                      KC_RALT, KC_RGUI,        KC_LEFT, KC_DOWN, KC_RGHT
+        QK_GESC,    KC_1,           KC_2,         KC_3,       KC_4,       KC_5,       KC_6,       KC_7,       KC_8,       KC_9,           KC_0,       KC_MINS,    KC_EQL,     KC_BSPC,        KC_HOME,
+		    KC_TAB,     KC_Q,           KC_W,         KC_E,       KC_R,       KC_T,       KC_Y,       KC_U,       KC_I,       KC_O,           KC_P,       KC_LBRC,    KC_RBRC,    KC_ENT,         KC_PGUP,
+		    KC_CAPS,    KC_A,           KC_S,         KC_D,       KC_F,       KC_G,       KC_H,       KC_J,       KC_K,       KC_L,           KC_SCLN,    KC_QUOT,    KC_BSLS,                    TO(0),
+		    KC_LSFT,    KC_NUBS,        KC_Z,         KC_X,       KC_C,       KC_V,       KC_B,       KC_N,       KC_M,       KC_COMM,        KC_DOT,     KC_SLSH,    KC_RSFT,    KC_UP,          KC_END,
+		    KC_LCTL,    KC_LGUI,        KC_LALT,     /*----------------------------space-----------------------------*/       KC_SPC,         KC_RALT,    KC_RGUI,    KC_LEFT,    KC_DOWN,        KC_RGHT
     )
 };
 
