@@ -46,6 +46,9 @@ enum my_keycodes {
   DV_BSLS,
   DV_MINS,
   DV_QUOT,
+  DV_A,
+  DV_O,
+  DV_E,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -350,6 +353,39 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           return true;
         } else {
           tap_code16(RALT(KC_2));
+        }
+      }
+      return false;
+    case DV_A:
+      // a A
+      if (record->event.pressed) {
+        if (get_mods() & MOD_MASK_SHIFT) {
+          unregister_tap_restore(KC_LBRC);
+          return true;
+        } else {
+          tap_code16(KC_A);
+        }
+      }
+      return false;
+    case DV_O:
+      // o O
+      if (record->event.pressed) {
+        if (get_mods() & MOD_MASK_SHIFT) {
+          unregister_tap_restore(KC_SCLN);
+          return true;
+        } else {
+          tap_code16(KC_O);
+        }
+      }
+      return false;
+    case DV_E:
+      // e E
+      if (record->event.pressed) {
+        if (get_mods() & MOD_MASK_SHIFT) {
+          unregister_tap_restore(KC_QUOT);
+          return true;
+        } else {
+          tap_code16(KC_E);
         }
       }
       return false;
