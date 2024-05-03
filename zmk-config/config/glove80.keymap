@@ -88,16 +88,7 @@
                 , <&macro_release &kp LSFT>
                 ;
     };
-   : undead_tick {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSFT>
-                , <&macro_tap &kp EQUAL &kp EQUAL>
-                , <&macro_release &kp LSFT>
-                ;
-    };
-  };
+ };
 };
 
 
