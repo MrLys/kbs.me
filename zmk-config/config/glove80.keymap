@@ -19,6 +19,7 @@
 #define EXT 4
 #define FN 5
 #define SYM 6
+#define NUM 7
 /* Convert NAME parameters into a ZMK label string */
 /* Create a ZMK behavior without having to specify the name three times */
 #define ALT_MORPH(NAME, STANDARD, MORPHED) \
@@ -26,7 +27,7 @@
         compatible = "zmk,behavior-mod-morph"; \
         #binding-cells = <0>; \
         bindings = <STANDARD>, <MORPHED>; \
-        mods = <(MOD_LALT|MOD_RALT)>; \
+        mods = <(MOD_LALT)>; \
     };
 
 #define SHIFT_MORPH(NAME, STANDARD, MORPHED) \
@@ -129,8 +130,8 @@
 
                     
         ALT_MORPH(dv_a, &kp A, &kp LBKT)
-        ALT_MORPH(dv_o, &kp O, &kp SQT)
-        ALT_MORPH(dv_e, &kp E, &kp SEMI)
+        ALT_MORPH(dv_o, &kp O, &kp SEMI)
+        ALT_MORPH(dv_e, &kp E, &kp SQT)
     };
 };
 
@@ -254,4 +255,14 @@
         };
 
     };
+       num_layer {
+            bindings = <
+            &none  &none         &none      &none      &none                                                                          &none     &none           &none       &none         &none
+            &none  &none         &none      &none      &none      &none                                                 &none         &none     &none           &none       &none         &none            
+            &none  &dv_8         &dv_alpha  &kp LS(N3) &dv_dlr    &kp LS(N5)                                            &dv_9         &kp N7    &kp N8          &kp N9      &dv_4         &none
+            &none  &sk LALT      &sk LGUI   &sk LSHFT  &sk LCTRL  &undead_caret                                         &dv_0         &kp N4    &kp N5          &kp N6      &kp FSLH      &none
+            &none  &none         &kp DEL    &kp TAB    &kp BSPC   &kp RET     &to L0 &none &none &none &none   &none    &kp N0        &kp N1    &kp N2          &kp N3      &kp LS(N7)  &none
+            &none  &none         &none      &none      &none                  &none  &none &none &none &kp RET &none                  &kp UP    &kp DOWN        &none       &none         &none
+            >;
+        };
 };
