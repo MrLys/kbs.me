@@ -188,7 +188,7 @@
             &kp TAB        &dv_semi   &dv_comma   &dv_dot     &kp P       &kp Y                                                                         &kp F   &kp G   &kp C       &kp R       &kp L       &dv_fslh
             &kp ESC        &dv_a      &dv_o       &dv_e       &kp U       &kp I                                                                         &kp D   &kp H   &kp T       &kp N       &kp S       &dv_minus
             &kp LSHFT      &dv_sqt    &kp Q       &kp J       &kp K       &kp X   &mo L1      &none       &to QWERTY    &none  &none       &mo SYM      &kp B   &kp M   &kp W       &kp V       &kp Z       &kp RSHFT
-            &mo MAGIC      &kp HOME   &kp END     &kp LEFT    &kp RIGHT           &mo EXT     &mo FN      &none         &none  &kp RET      &kp SPACE            &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &none
+            &mo MAGIC      &kp HOME   &kp END     &kp LEFT    &kp RIGHT           &kp BSPC    &mo FN      &none         &none  &kp RET      &kp SPACE            &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &none
             >;
         };
 
@@ -198,7 +198,7 @@
             &trans            &none               &none           &none           &none           &kp HOME                                                                              &kp LPAR        &kp KP_NUM   &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp PSCRN
             &kp LA(TAB)       &dv_semi            &none           &kp UP          &none           &kp END                                                                               &kp RPAR        &kp TAB      &dv_ticks    &kp KP_N9     &dv_alpha       &kp SLCK
             &trans            &dv_perc            &dv_7           &dv_5           &dv_3           &dv_1                                                                                 &dv_9           &dv_0        &dv_2        &dv_4         &dv_6           &dv_8
-            &trans            &kp K_CMENU         &none           &kp F11         &kp F12         &kp PG_DN       &trans      &trans      &to L0 &trans      &trans      &trans    &dv_dlr         &undead_caret    &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &trans
+            &trans            &kp K_CMENU         &none           &kp F11         &kp F12         &kp PG_DN       &trans      &trans      &to L0      &trans      &trans      &mo EXT   &dv_dlr         &undead_caret    &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &trans
             &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &trans      &trans      &trans      &trans      &trans      &kp LSFT                  &kp KP_N0    &kp KP_N0    &kp KP_DOT    &kp KP_ENTER    &trans
             >;
         };
