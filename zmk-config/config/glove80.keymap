@@ -181,6 +181,7 @@
       // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
       // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | L1 | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
       // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+         
 
 
 
@@ -196,12 +197,12 @@
     };
     num_layer {
     bindings = <
-      &none  &none         &none      &none      &none                                                                                    &none     &none           &none       &none         &none
-      &none  &none         &none      &none      &none            &none                                                     &none         &none     &none           &none       &none         &none            
-      &none  &kp LBKT      &kp SEMI   &kp SQT    &undead_caret    &dv_dlr                                                   &dv_9         &kp N7    &kp N8          &kp N9      &dv_4         &none
-      &none  &sk LALT      &sk LGUI   &sk LSHFT  &sk LCTRL        &kp LS(N5)                                                &dv_0         &kp N4    &kp N5          &kp N6      &kp FSLH      &none
-      &none  &none         &kp DEL    &kp TAB    &kp BSPC         &kp RET     &trans    &none &none &none &none   &mo EXT   &kp N0        &kp N1    &kp N2          &kp N3      &kp LS(N7)    &none
-      &none  &none         &none      &kp LEFT   &kp RIGHT                    &kp BSPC  &none &none &none &kp RET &kp SPACE               &kp UP    &kp DOWN        &none       &none         &none
+      &none  &none         &none      &none      &none                                                                                        &none     &none           &none       &none         &none
+      &none  &none         &none      &none      &none            &none                                                         &none         &none     &none           &none       &none         &none            
+      &none  &kp LBKT      &kp SEMI   &kp SQT    &undead_caret    &dv_dlr                                                       &dv_9         &kp N7    &kp N8          &kp N9      &dv_4         &none
+      &none  &sk LALT      &sk LGUI   &sk LSHFT  &sk LCTRL        &kp LS(N5)                                                    &dv_0         &kp N4    &kp N5          &kp N6      &kp FSLH      &none
+      &none  &none         &kp DEL    &kp TAB    &kp BSPC         &kp RET     &trans    &none &none &none &kp LSHFT   &mo EXT   &kp N0        &kp N1    &kp N2          &kp N3      &kp LS(N7)    &none
+      &none  &none         &none      &kp LEFT   &kp RIGHT                    &kp BSPC  &none &none &none &kp RET     &kp SPACE               &kp UP    &kp DOWN        &none       &none         &none
     >;
   };
 
