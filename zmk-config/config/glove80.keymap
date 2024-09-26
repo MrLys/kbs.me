@@ -246,13 +246,13 @@
     >;
   };
   sym_layer {
-    bindings = <
-      &none  &none         &none      &none      &none                                                                          &none     &none           &none       &none         &none
-      &none  &none         &none      &none      &none      &none                                                 &none         &none     &none           &none       &none         &none            
-      &none  &dv_8         &dv_alpha  &kp LS(N3) &dv_dlr    &kp LS(N5)                                            &dv_9         &dv_ticks &kp LS(COMMA)   &kp LS(DOT) &dv_4         &none
-      &none  &sk LALT      &sk LGUI   &sk LSHFT  &sk LCTRL  &undead_caret                                         &dv_0         &dv_1     &dv_5           &dv_7       &kp FSLH      &none
-      &none  &kp LS(MINUS) &kp LS(N7) &kp EQUAL  &kp GRAVE  &kp LS(N6)  &to L0 &none &none &none &none   &none    &undead_tilde &dv_2     &dv_3           &dv_6       &kp LS(FSLH)  &none
-      &none  &none         &none      &none      &none                  &none  &none &none &none &kp RET &none                  &kp UP    &kp DOWN        &kp LC(C)   &kp LC(V)         &none
+    bindings = <//&dv_comma   &dv_dot
+      &none  &none         &none      &none      &none                                                                          &none     &none           &none       &none                     &none
+      &none  &none         &none      &none      &none      &none                                                 &none         &none     &none           &none       &none                     &none            
+      &none  &dv_8         &dv_alpha  &kp LS(N3) &dv_dlr    &kp LS(N5)                                            &dv_9         &dv_ticks &kp LS(COMMA)   &kp LS(DOT) &dv_4                     &none
+      &none  &sk LALT      &sk LGUI   &sk LSHFT  &sk LCTRL  &undead_caret                                         &dv_0         &dv_1     &dv_5           &dv_7       &&kp NON_US_BSLH          &none
+      &none  &kp LS(MINUS) &kp LS(N7) &kp EQUAL  &kp GRAVE  &kp LS(N6)  &to L0 &none &none &none &none   &none    &undead_tilde &dv_2     &dv_3           &dv_6       &kp LS(NON_US_BSLH)       &none
+      &none  &none         &none      &none      &none                  &none  &none &none &none &kp RET &none                  &kp UP    &kp DOWN        &kp LC(C)   &kp LC(V)                 &none
     >;
   };
   symbol_layer {
