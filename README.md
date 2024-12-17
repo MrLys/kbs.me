@@ -8,5 +8,10 @@ git clone https://github.com/qmk/qmk_firmware.git
 2. Link the keyboard keymap to the qmk_firmware
 ```
 ln -s $HOME/project/kbs.me/keyboards/wt65_h4/mrlys $HOME/project/qmk_firmware/keyboards/wilba_tech/wt65_h4/keymaps/mrlys
-qmk flash -kb wilba_tech/wt65_h4 -km mrlys
 ```
+3. Put into DFU (bootloader) mode
+* wt65_h4 - hold esc + control and plug in keyboard
+4. Compile and flash
+```
+qmk compile -kb wilba_tech/wt65_h4 -km mrlys
+qmk flash -kb wilba_tech/wt65_h4 -km mrlys
