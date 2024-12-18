@@ -142,7 +142,7 @@
         ALT_MORPH(dv_e, &kp E, &kp SQT)
 
         //SHIFT_MORPH(osx_dv_perc, &kp LS(N6), &kp LS(N5)) not used and wrong?
-        SHIFT_MORPH(osx_dv_dlr, &kp LS(N4), &&kp RA(RBKT)) // ok
+        SHIFT_MORPH(osx_dv_dlr, &kp LS(N4), &kp RA(RBKT)) // ok
         SHIFT_MORPH(osx_dv_7, &kp RA(N8), &kp N7) //  ok
         SHIFT_MORPH(osx_dv_5, &kp LS(RA(N8)), &kp N5) // ok
         SHIFT_MORPH(osx_dv_3, &kp LS(RA(N9)), &kp N3) // ok
@@ -377,7 +377,7 @@
     &trans            &kp K_CMENU         &none           &kp F11         &kp LC(V)       &kp LC(C)       &trans      &trans      &to L0      &trans      &trans      &mo EXT   &osx_dv_dlr     &undead_caret    &kp KP_N2        &kp KP_N3     &kp KP_ENTER    &trans
     &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &trans      &trans      &trans      &trans      &trans      &kp LSFT                  &kp KP_N0        &kp KP_N0        &kp KP_DOT    &kp KP_ENTER    &trans
   >;
-  };
+};
 
 };
 };
