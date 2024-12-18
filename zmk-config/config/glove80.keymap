@@ -241,12 +241,12 @@
 
   magic_layer { //MAGIC 2
     bindings = <
-      &bt BT_CLR        &none               &none           &none           &none                                                                                                           &none      &none      &none      &none      &none
-      &none             &none               &none           &none           &none           &none                                                                                &none      &none      &none      &none      &none      &none
-      &none             &rgb_ug RGB_SPI     &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_TOG                                                                      &none      &none      &none      &none      &none      &none
-      &bootloader       &rgb_ug RGB_SPD     &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_EFF                                                                      &none      &to L0     &to OSX_L0      &none      &none      &bootloader
-      &sys_reset        &none               &none           &none           &none           &none           &bt_2     &bt_3     &none            &none     &none     &none       &none      &none      &none      &none      &none      &sys_reset
-      &none             &none               &none           &none           &none                           &bt_0     &bt_1     &out OUT_USB     &none     &none     &none                  &none      &none      &none      &none      &none
+      &bt BT_CLR        &none               &none           &none           &none                                                                                                           &none      &none        &none      &none      &none
+      &none             &none               &none           &none           &none           &none                                                                                &none      &none      &none        &none      &none      &none
+      &none             &rgb_ug RGB_SPI     &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_TOG                                                                      &none      &none      &none        &none      &none      &none
+      &bootloader       &rgb_ug RGB_SPD     &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_EFF                                                                      &none      &tog L0    &tog OSX_L0  &none      &none      &bootloader
+      &sys_reset        &none               &none           &none           &none           &none           &bt_2     &bt_3     &none            &none     &none     &none       &none      &none      &none        &none      &none      &sys_reset
+      &none             &none               &none           &none           &none                           &bt_0     &bt_1     &out OUT_USB     &none     &none     &none                  &none      &none        &none      &none      &none
     >;
   };
   qwerty_layer { // QWERTY 3
@@ -255,7 +255,7 @@
     &kp EQUAL      &kp N1   &kp N2      &kp N3      &kp N4      &kp N5                                                                        &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &kp MINUS
     &kp TAB        &kp Q    &kp W       &kp E       &kp R       &kp T                                                                         &kp Y   &kp U   &kp I       &kp O       &kp P       &kp BSLH
     &kp ESC        &kp A    &kp S       &kp D       &kp F       &kp G                                                                         &kp H   &kp J   &kp K       &kp L       &kp SEMI    &kp SQT
-    &kp GRAVE      &kp Z    &kp X       &kp C       &kp V       &kp B   &kp LSHFT   &kp LCTRL   &to L0   &kp LGUI  &kp RCTRL &kp RSHFT        &kp N   &kp M   &kp COMMA   &kp DOT     &kp FSLH    &kp PG_UP
+    &kp GRAVE      &kp Z    &kp X       &kp C       &kp V       &kp B   &kp LSHFT   &kp LCTRL   &tog L0   &kp LGUI  &kp RCTRL &kp RSHFT        &kp N   &kp M   &kp COMMA   &kp DOT     &kp FSLH    &kp PG_UP
     &mo MAGIC      &kp HOME &kp END     &kp LEFT    &kp RIGHT           &kp BSPC    &kp DEL     &kp LALT &kp RALT  &kp RET   &kp SPACE           &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &kp PG_DN
     >;
   };
@@ -295,7 +295,7 @@
     &trans            &none               &none           &none           &none           &kp HOME                                                                              &kp LPAR        &kp KP_NUM       &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp PSCRN
     &kp LA(TAB)       &kp LBKT            &kp SEMI        &kp SQT         &none           &kp END                                                                               &kp RPAR        &kp TAB          &dv_ticks    &kp KP_N9     &dv_alpha       &kp SLCK
     &trans            &dv_perc            &dv_7           &dv_5           &dv_3           &dv_1                                                                                 &dv_9           &dv_0            &dv_2        &dv_4         &dv_6           &dv_8
-    &trans            &kp K_CMENU         &none           &kp F11         &kp LC(V)       &kp LC(C)       &trans      &trans      &to L0      &trans      &trans      &mo EXT   &dv_dlr         &undead_caret    &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &trans
+    &trans            &kp K_CMENU         &none           &kp F11         &kp LC(V)       &kp LC(C)       &trans      &trans      &tog L0     &trans      &trans      &mo EXT   &dv_dlr         &undead_caret    &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &trans
     &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &trans      &trans      &trans      &trans      &trans      &kp LSFT                  &kp KP_N0        &kp KP_N0    &kp KP_DOT    &kp KP_ENTER    &trans
   >;
   };
