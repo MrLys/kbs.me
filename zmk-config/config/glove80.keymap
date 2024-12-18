@@ -28,6 +28,7 @@
 #define OSX_FN 12
 #define OSX_SYM 13
 #define OSX_L1 14
+
 /* Convert NAME parameters into a ZMK label string */
 /* Create a ZMK behavior without having to specify the name three times */
 #define ALT_MORPH(NAME, STANDARD, MORPHED) \
@@ -227,7 +228,7 @@
         &mo MAGIC      &kp HOME   &kp END     &kp LEFT    &kp RIGHT           &kp BSPC    &mo FN      &kp LALT      &kp LALT  &kp RET      &kp SPACE        &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &none
       >;
     };
-    num_layer { // #define NPAD 1
+    num_layer { // NPAD 1
     bindings = <
       &none  &none         &none      &none      &none                                                                                        &none     &none           &none       &none         &none
       &none  &none         &none      &none      &none            &none                                                         &none         &none     &none           &none       &none         &none            
@@ -238,7 +239,7 @@
     >;
   };
 
-  magic_layer { //#define MAGIC 2
+  magic_layer { //MAGIC 2
     bindings = <
       &bt BT_CLR        &none               &none           &none           &none                                                                                                           &none      &none      &none      &none      &none
       &none             &none               &none           &none           &none           &none                                                                                &none      &none      &none      &none      &none      &none
@@ -248,7 +249,7 @@
       &none             &none               &none           &none           &none                           &bt_0     &bt_1     &out OUT_USB     &none     &none     &none                  &none      &none      &none      &none      &none
     >;
   };
-  qwerty_layer { // #define QWERTY 3
+  qwerty_layer { // QWERTY 3
     bindings = <                                                                                              
     &kp F1         &kp F2   &kp F3      &kp F4      &kp F5                                                                                            &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
     &kp EQUAL      &kp N1   &kp N2      &kp N3      &kp N4      &kp N5                                                                        &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &kp MINUS
@@ -258,7 +259,7 @@
     &mo MAGIC      &kp HOME &kp END     &kp LEFT    &kp RIGHT           &kp BSPC    &kp DEL     &kp LALT &kp RALT  &kp RET   &kp SPACE           &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &kp PG_DN
     >;
   };
-  ext_layer { // #define EXT 4
+  ext_layer { // EXT 4
     bindings = <
       &none  &none     &none     &none      &none                                                                    &none    &none    &none       &none     &none
       &none  &none     &none     &none      &none     &none                                                &none     &none    &none    &none       &none     &none            
@@ -268,7 +269,7 @@
       &none  &none     &none     &none      &none                &none   &none &none &none &kp RET &none             &kp UP   &kp DOWN &none       &none     &none
     >;
   };
-  func_layer { // #define FN 5
+  func_layer { // FN 5
     bindings = <
       &none  &none      &none        &none      &none                                                                     &none  &none    &none  &none    &none
       &none  &none      &none        &none      &none        &none                                                &none   &none  &none    &none  &none    &none            
@@ -278,7 +279,7 @@
       &none  &none      &none        &none      &none                   &none  &none &none &none &kp RET &none            &kp UP &kp DOWN &none  &none    &none
     >;
   };
-  sym_layer { // #define SYM 6
+  sym_layer { // SYM 6
     bindings = <//&dv_comma   &dv_dot
       &none  &none         &none      &none      &none                                                                          &none     &none           &none       &none                     &none
       &none  &none         &none      &none      &none      &none                                                 &none         &none     &none           &none       &none                     &none            
@@ -288,7 +289,7 @@
       &none  &none         &none      &none      &none                  &none  &none &none &none &kp RET &none                  &kp UP    &kp DOWN        &kp LC(C)   &kp LC(V)                 &none
     >;
   };
-  symbol_layer { // #define L1 7
+  symbol_layer { // L1 7
   bindings = <
     &kp C_BRI_DN      &kp C_BRI_UP        &kp C_PREV      &kp C_NEXT      &kp C_PP                                                                                                              &kp C_MUTE       &kp C_VOL_DN &kp C_VOL_UP  &none           &kp PAUSE_BREAK
     &trans            &none               &none           &none           &none           &kp HOME                                                                              &kp LPAR        &kp KP_NUM       &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp PSCRN
@@ -298,6 +299,7 @@
     &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &trans      &trans      &trans      &trans      &trans      &kp LSFT                  &kp KP_N0        &kp KP_N0    &kp KP_DOT    &kp KP_ENTER    &trans
   >;
   };
+
   // osx setup
     osx_default_layer { // OSX_L0 8
       // ---------------------------------------------------------------------------------------------------------------------------------
@@ -317,7 +319,7 @@
         &mo MAGIC      &kp HOME       &kp END         &kp LEFT        &kp RIGHT           &kp BSPC        &mo OSX_FN  &kp LALT      &kp LALT  &kp RET      &kp SPACE            &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &none
       >;
     };
-    osx_num_layer { // #define OSX_NPAD 9
+    osx_num_layer { // OSX_NPAD 9
     bindings = <
       &none  &none         &none      &none      &none                                                                                            &none     &none           &none       &none         &none
       &none  &none         &none      &none      &none            &none                                                             &none         &none     &none           &none       &none         &none            
@@ -328,7 +330,7 @@
     >;
   };
 
-  osx_qwerty_layer { // #define OSX_QWERTY 10
+  osx_qwerty_layer { // OSX_QWERTY 10
     bindings = <                                                                                              
     &kp F1         &kp F2   &kp F3      &kp F4      &kp F5                                                                                            &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
     &kp EQUAL      &kp N1   &kp N2      &kp N3      &kp N4      &kp N5                                                                        &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &kp MINUS
@@ -338,7 +340,7 @@
     &mo MAGIC      &kp HOME &kp END     &kp LEFT    &kp RIGHT           &kp BSPC    &kp DEL     &kp LALT &kp RALT  &kp RET   &kp SPACE                &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &kp PG_DN
     >;
   };
-  osx_ext_layer { // #define OSX_EXT 11
+  osx_ext_layer { // OSX_EXT 11
     bindings = <
       &none  &none     &none        &none         &none                                                                        &none    &none    &none       &none     &none
       &none  &none     &none        &none         &none     &none                                                    &none     &none    &none    &none       &none     &none            
@@ -348,7 +350,7 @@
       &none  &none     &none        &none         &none                &none       &none &none &none &kp RET &none             &kp UP   &kp DOWN &none       &none     &none
     >;
   };
-  osx_func_layer { // #define OSX_FN 12
+  osx_func_layer { // OSX_FN 12
     bindings = <
       &none         &none      &none        &none         &none                                                                           &none  &none    &none  &none    &none
       &none         &none      &none        &none         &none        &none                                                      &none   &none  &none    &none  &none    &none            
@@ -358,7 +360,7 @@
       &none         &none      &none        &none         &kp TAB                   &none      &none &none &none &kp RET &none            &kp UP &kp DOWN &none  &none    &none
     >;
   };
-  osx_sym_layer { // #define OSX_SYM 13
+  osx_sym_layer { // OSX_SYM 13
     bindings = <
       &none  &none         &none          &none           &none                                                                                    &none         &none           &none       &none                     &none
       &none  &none         &none          &none           &none        &none                                                     &none             &none         &none           &none       &none                     &none            
@@ -368,14 +370,14 @@
       &none  &none         &none          &none           &none                    &none      &none &none &none &kp RET &none                      &kp UP        &kp DOWN        &kp LGUI(C) &kp LGUI(V)               &none
     >;
   };
-  osx_symbol_layer { // #define OSX_L1 14
+  osx_symbol_layer { // OSX_L1 14
   bindings = <
-    &kp C_BRI_DN      &kp C_BRI_UP        &kp C_PREV      &kp C_NEXT      &kp C_PP                                                                                                              &kp C_MUTE       &kp C_VOL_DN     &kp C_VOL_UP  &none           &kp PAUSE_BREAK
-    &trans            &none               &none           &none           &none           &kp HOME                                                                              &kp LPAR        &kp KP_NUM       &kp KP_EQUAL     &kp KP_DIVIDE &kp KP_MULTIPLY &kp PSCRN
-    &kp LA(TAB)       &kp LBKT            &kp SEMI        &kp SQT         &none           &kp END                                                                               &kp RPAR        &kp TAB          &osx_dv_ticks    &kp KP_N9     &osx_dv_alpha   &kp SLCK
-    &trans            &kp N8              &osx_dv_7       &osx_dv_5       &osx_dv_3       &osx_dv_1                                                                             &osx_dv_9       &osx_dv_0        &osx_dv_2        &osx_dv_4     &osx_dv_6       &osx_dv_8
-    &trans            &kp K_CMENU         &none           &kp F11         &kp LC(V)       &kp LC(C)       &trans      &trans      &to L0      &trans      &trans      &mo EXT   &osx_dv_dlr     &undead_caret    &kp KP_N2        &kp KP_N3     &kp KP_ENTER    &trans
-    &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &trans      &trans      &trans      &trans      &trans      &kp LSFT                  &kp KP_N0        &kp KP_N0        &kp KP_DOT    &kp KP_ENTER    &trans
+    &kp C_BRI_DN      &kp C_BRI_UP        &kp C_PREV      &kp C_NEXT      &kp C_PP                                                                                                                  &kp C_MUTE       &kp C_VOL_DN     &kp C_VOL_UP  &none           &kp PAUSE_BREAK
+    &trans            &none               &none           &none           &none           &kp HOME                                                                                  &kp LPAR        &kp KP_NUM       &kp KP_EQUAL     &kp KP_DIVIDE &kp KP_MULTIPLY &kp PSCRN
+    &kp LA(TAB)       &kp LBKT            &kp SEMI        &kp SQT         &none           &kp END                                                                                   &kp RPAR        &kp TAB          &osx_dv_ticks    &kp KP_N9     &osx_dv_alpha   &kp SLCK
+    &trans            &kp N8              &osx_dv_7       &osx_dv_5       &osx_dv_3       &osx_dv_1                                                                                 &osx_dv_9       &osx_dv_0        &osx_dv_2        &osx_dv_4     &osx_dv_6       &osx_dv_8
+    &trans            &kp K_CMENU         &none           &kp F11         &kp LC(V)       &kp LC(C)       &trans      &trans      &to L0      &trans      &trans      &mo OSX_EXT   &osx_dv_dlr     &undead_caret    &kp KP_N2        &kp KP_N3     &kp KP_ENTER    &trans
+    &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &trans      &trans      &trans      &trans      &trans      &kp LSFT                      &kp KP_N0        &kp KP_N0        &kp KP_DOT    &kp KP_ENTER    &trans
   >;
 };
 
