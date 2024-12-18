@@ -221,7 +221,7 @@
          
       bindings = <
         &kp F1         &kp F2     &kp F3      &kp F4      &kp F5                                                                                            &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
-        &dv_dlr        &kp N1     &kp N2      &kp N3      &kp N4      &kp N5                                                                        &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &dv_bslh
+        &dv_dlr        &kp N1     &kp N2      &kp N3      &kp N4      &kp N5                                                                        &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &lt OSX_L0
         &kp TAB        &dv_semi   &dv_comma   &dv_dot     &kp P       &kp Y                                                                         &kp F   &kp G   &kp C       &kp R       &kp L       &dv_fslh
         &kp ESC        &dv_a      &dv_o       &dv_e       &kp U       &kp I                                                                         &kp D   &kp H   &kp T       &kp N       &kp S       &dv_minus
         &kp LSHFT      &dv_sqt    &kp Q       &kp J       &kp K       &kp X   &mo NPAD    &kp LSHFT   &mo L1      &none     &kp LSHFT    &mo SYM  &kp B   &kp M   &kp W       &kp V       &kp Z       &kp RSHFT
@@ -312,7 +312,7 @@
          
       bindings = <
         &kp F1         &kp F2         &kp F3          &kp F4          &kp F5                                                                                                    &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
-        &osx_dv_dlr    &kp N1         &kp N2          &kp N3          &kp N4      &kp N5                                                                                &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &osx_dv_bslh
+        &osx_dv_dlr    &kp N1         &kp N2          &kp N3          &kp N4      &kp N5                                                                                &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &lt L0
         &kp TAB        &osx_dv_semi   &osx_dv_comma   &osx_dv_dot     &kp P       &kp Y                                                                                 &kp F   &kp G   &kp C       &kp R       &kp L       &osx_dv_fslh
         &kp ESC        &osx_dv_a      &osx_dv_o       &osx_dv_e       &kp U       &kp I                                                                                 &kp D   &kp H   &kp T       &kp N       &kp S       &osx_dv_minus
         &kp LSHFT      &osx_dv_sqt    &kp Q           &kp J           &kp K       &kp X   &mo OSX_NPAD    &kp LSHFT   &mo OSX_L1    &none     &kp LSHFT    &mo OSX_SYM  &kp B   &kp M   &kp W       &kp V       &kp Z       &kp RSHFT
