@@ -162,7 +162,7 @@
         SHIFT_MORPH(osx_dv_bslh, &kp GRAVE, &kp EQUAL) // \ |
         SHIFT_MORPH(osx_dv_fslh, &kp LS(N7), &kp LS(MINUS)) // / ?
         SHIFT_MORPH(osx_dv_minus, &kp FSLH, &kp LS(FSLH)) // -_ ok 
-        SHIFT_MORPH(osx_dv_ticks, &undead_tick, &kp LS(N3)) // ` # ok 
+        SHIFT_MORPH(osx_dv_ticks, &kp LS(EQUAL), &kp LS(N3)) // ` # ok 
         SHIFT_MORPH(osx_dv_alpha, &kp BSLH, &kp LS(RBKT)) // @ ^ 
 
                     
@@ -323,7 +323,7 @@
     bindings = <
       &none  &none         &none      &none      &none                                                                                            &none     &none           &none       &none         &none
       &none  &none         &none      &none      &none            &none                                                             &none         &none     &none           &none       &none         &none            
-      &none  &kp LBKT      &kp SEMI   &kp SQT    &undead_caret    &osx_dv_dlr                                                       &osx_dv_9     &kp N7    &kp N8          &kp N9      &osx_dv_4         &none
+      &none  &kp LBKT      &kp SEMI   &kp SQT    &kp LS(RBKT)     &osx_dv_dlr                                                       &osx_dv_9     &kp N7    &kp N8          &kp N9      &osx_dv_4         &none
       &none  &sk LALT      &sk LGUI   &sk LSHFT  &sk LCTRL        &kp LS(N5)                                                        &osx_dv_0     &kp N4    &kp N5          &kp N6      &kp FSLH      &none
       &none  &none         &kp DEL    &kp TAB    &kp BSPC         &kp RET     &trans    &none &none &none &kp LSHFT   &mo OSX_EXT   &kp N0        &kp N1    &kp N2          &kp N3      &kp LS(N7)    &none
       &none  &none         &none      &kp LEFT   &kp RIGHT                    &kp BSPC  &none &none &none &kp RET     &kp SPACE                   &kp UP    &kp DOWN        &none       &none         &none
@@ -344,8 +344,8 @@
     bindings = <
       &none  &none       &none        &none         &none                                                                          &none    &none    &none       &none     &none
       &none  &none       &none        &none         &none     &none                                                      &none     &none    &none    &none       &none     &none            
-      &none  &kp ESC     &none        &kp LC(F)     &tmux_fzf &kp INS                                                    &kp PG_UP &kp HOME &kp UP   &kp END     &kp CAPS  &none
-      &none  &sk LALT    &sk LGUI     &sk LSHFT     &sk LCTRL &sk RALT                                                   &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT   &kp DEL   &none
+      &none  &kp ESC     &none        &kp LC(F)     &tmux_fzf &kp INS                                                    &kp PG_UP &kp HOME &kp LC(U)   &kp END     &kp CAPS  &none
+      &none  &sk LALT    &sk LGUI     &sk LSHFT     &sk LCTRL &sk RALT                                                   &kp PG_DN &kp LEFT &kp LC(D) &kp RIGHT   &kp DEL   &none
       &none  &kp LG(Z)   &kp LG(X)    &kp LG(C)     &kp LGUI  &kp LG(V)    &to OSX_L0  &none &none &none &none   &none   &kp RET   &kp BSPC &kp TAB  &kp K_CMENU &kp PSCRN &none
       &none  &none       &none        &none         &none                  &none       &none &none &none &kp RET &none             &kp UP   &kp DOWN &none       &none     &none
     >;
@@ -365,7 +365,7 @@
       &none  &none         &none          &none           &none                                                                                    &none         &none           &none       &none                     &none
       &none  &none         &none          &none           &none        &none                                                     &none             &none         &none           &none       &none                     &none            
       &none  &osx_dv_8     &osx_dv_alpha  &kp LS(N3)      &osx_dv_dlr  &kp LS(N5)                                                &osx_dv_9         &osx_dv_ticks &kp LS(COMMA)   &kp LS(DOT) &osx_dv_4                 &none
-      &none  &sk LALT      &sk LGUI       &sk LSHFT       &sk LCTRL    &undead_caret                                             &osx_dv_0         &osx_dv_1     &osx_dv_5       &osx_dv_7   &kp GRAVE                 &none
+      &none  &sk LALT      &sk LGUI       &sk LSHFT       &sk LCTRL    &kp LS(RBKT)                                              &osx_dv_0         &osx_dv_1     &osx_dv_5       &osx_dv_7   &kp GRAVE                 &none
       &none  &kp LS(MINUS) &kp LS(N7)     &kp LS(RA(N7))  &kp LS(N7)   &kp LS(N6)  &to OSX_L0 &none &none &none &none   &none    &undead_tilde     &osx_dv_2     &osx_dv_3       &osx_dv_6   &kp LS(GRAVE)             &none
       &none  &none         &none          &none           &none                    &none      &none &none &none &kp RET &none                      &kp UP        &kp DOWN        &kp LG(C)   &kp LG(V)                 &none
     >;
@@ -376,7 +376,7 @@
     &trans            &none               &none           &none           &none           &kp HOME                                                                                  &kp LPAR        &kp KP_NUM       &kp KP_EQUAL     &kp KP_DIVIDE &kp KP_MULTIPLY &kp PSCRN
     &kp LA(TAB)       &kp LBKT            &kp SEMI        &kp SQT         &none           &kp END                                                                                   &kp RPAR        &kp TAB          &osx_dv_ticks    &kp KP_N9     &osx_dv_alpha   &kp SLCK
     &trans            &kp N8              &osx_dv_7       &osx_dv_5       &osx_dv_3       &osx_dv_1                                                                                 &osx_dv_9       &osx_dv_0        &osx_dv_2        &osx_dv_4     &osx_dv_6       &osx_dv_8
-    &trans            &kp K_CMENU         &none           &kp F11         &kp LC(V)       &kp LC(C)       &trans      &trans      &to L0      &trans      &trans      &mo OSX_EXT   &osx_dv_dlr     &undead_caret    &kp KP_N2        &kp KP_N3     &kp KP_ENTER    &trans
+    &trans            &kp K_CMENU         &none           &kp F11         &kp LC(V)       &kp LC(C)       &trans      &trans      &to L0      &trans      &trans      &mo OSX_EXT   &osx_dv_dlr     &kp LS(RBKT)     &kp KP_N2        &kp KP_N3     &kp KP_ENTER    &trans
     &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &trans      &trans      &trans      &trans      &trans      &kp LSFT                      &kp KP_N0        &kp KP_N0        &kp KP_DOT    &kp KP_ENTER    &trans
   >;
 };
