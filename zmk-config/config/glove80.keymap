@@ -1,6 +1,4 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
+/* Copyright (c) 2020 The ZMK Contributors
  * SPDX-License-Identifier: MIT
  */
 
@@ -316,7 +314,7 @@
         &kp TAB        &osx_dv_semi   &osx_dv_comma   &osx_dv_dot     &kp P       &kp Y                                                                                 &kp F   &kp G   &kp C       &kp R       &kp L       &osx_dv_fslh
         &kp ESC        &osx_dv_a      &osx_dv_o       &osx_dv_e       &kp U       &kp I                                                                                 &kp D   &kp H   &kp T       &kp N       &kp S       &osx_dv_minus
         &kp LSHFT      &osx_dv_sqt    &kp Q           &kp J           &kp K       &kp X   &mo OSX_NPAD    &kp LSHFT   &mo OSX_L1    &none     &kp LSHFT    &mo OSX_SYM  &kp B   &kp M   &kp W       &kp V       &kp Z       &kp RSHFT
-        &mo MAGIC      &kp HOME       &kp END         &kp LEFT        &kp RIGHT           &kp BSPC        &mo OSX_FN  &kp LALT      &kp LALT  &kp RET      &kp SPACE            &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &none
+        &mo MAGIC      &kp LSHFT      &kp LCTRL       &kp LEFT        &kp RIGHT           &kp BSPC        &mo OSX_FN  &kp LALT      &kp LALT  &kp RET      &kp SPACE            &kp UP  &kp DOWN    &kp LCTRL   &kp RSHFT    &none
       >;
     };
     osx_num_layer { // OSX_NPAD 9
@@ -326,18 +324,18 @@
       &none  &kp LBKT      &kp SEMI   &kp SQT    &kp LS(RBKT)     &osx_dv_dlr                                                       &osx_dv_9     &kp N7    &kp N8          &kp N9      &osx_dv_4         &none
       &none  &sk LALT      &sk LGUI   &sk LSHFT  &sk LCTRL        &kp LS(N5)                                                        &osx_dv_0     &kp N4    &kp N5          &kp N6      &kp FSLH      &none
       &none  &none         &kp DEL    &kp TAB    &kp BSPC         &kp RET     &trans    &none &none &none &kp LSHFT   &mo OSX_EXT   &kp N0        &kp N1    &kp N2          &kp N3      &kp LS(N7)    &none
-      &none  &none         &none      &kp LEFT   &kp RIGHT                    &kp BSPC  &none &none &none &kp RET     &kp SPACE                   &kp UP    &kp DOWN        &none       &none         &none
+      &none  &kp LSHFT      &kp LCTRL      &kp LEFT   &kp RIGHT                    &kp BSPC  &none &none &none &kp RET     &kp SPACE                   &kp UP    &kp DOWN        &kp LCTRL   &kp RSHFT         &none
     >;
   };
 
   osx_qwerty_layer { // OSX_QWERTY 10
     bindings = <                                                                                              
-    &kp F1         &kp F2   &kp F3      &kp F4      &kp F5                                                                                            &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
-    &kp EQUAL      &kp N1   &kp N2      &kp N3      &kp N4      &kp N5                                                                        &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &kp MINUS
-    &kp TAB        &kp Q    &kp W       &kp E       &kp R       &kp T                                                                         &kp Y   &kp U   &kp I       &kp O       &kp P       &kp BSLH
-    &kp ESC        &kp A    &kp S       &kp D       &kp F       &kp G                                                                         &kp H   &kp J   &kp K       &kp L       &kp SEMI    &kp SQT
-  &kp GRAVE      &kp Z    &kp X       &kp C       &kp V       &kp B   &kp LSHFT   &kp LCTRL   &to L0   &kp LGUI  &kp RCTRL &kp RSHFT        &kp N   &kp M   &kp COMMA   &kp DOT     &kp FSLH    &kp PG_UP
-  &mo MAGIC      &kp HOME &kp END     &kp LEFT    &kp RIGHT           &kp BSPC    &kp DEL     &kp LALT &kp RALT  &kp RET   &kp SPACE                &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &kp PG_DN
+    &kp F1         &kp F2     &kp F3      &kp F4      &kp F5                                                                                            &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
+    &kp EQUAL      &kp N1     &kp N2      &kp N3      &kp N4      &kp N5                                                                        &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &kp MINUS
+    &kp TAB        &kp Q      &kp W       &kp E       &kp R       &kp T                                                                         &kp Y   &kp U   &kp I       &kp O       &kp P       &kp BSLH
+    &kp ESC        &kp A      &kp S       &kp D       &kp F       &kp G                                                                         &kp H   &kp J   &kp K       &kp L       &kp SEMI    &kp SQT
+  &kp GRAVE        &kp Z      &kp X       &kp C       &kp V       &kp B   &kp LSHFT   &kp LCTRL   &to L0   &kp LGUI  &kp RCTRL &kp RSHFT        &kp N   &kp M   &kp COMMA   &kp DOT     &kp FSLH    &kp PG_UP
+  &mo MAGIC        &kp LSHFT  &kp LCTRL     &kp LEFT    &kp RIGHT           &kp BSPC    &kp DEL     &kp LALT &kp RALT  &kp RET   &kp SPACE                &kp UP  &kp DOWN    &kp LCTRL   &kp RSHFT    &kp PG_DN
   >;
   };
   osx_ext_layer { // OSX_EXT 11
@@ -347,7 +345,7 @@
       &none  &kp ESC     &none        &kp LC(F)     &tmux_fzf &kp INS                                                    &kp PG_UP &kp HOME &kp LC(U)   &kp END     &kp CAPS  &none
       &none  &sk LALT    &sk LGUI     &sk LSHFT     &sk LCTRL &sk RALT                                                   &kp PG_DN &kp LEFT &kp LC(D) &kp RIGHT   &kp DEL   &none
       &none  &kp LG(Z)   &kp LG(X)    &kp LG(C)     &kp LGUI  &kp LG(V)    &to OSX_L0  &none &none &none &none   &none   &kp RET   &kp BSPC &kp TAB  &kp K_CMENU &kp PSCRN &none
-      &none  &none       &none        &none         &none                  &none       &none &none &none &kp RET &none             &kp UP   &kp DOWN &none       &none     &none
+      &none  &kp LSHFT  &kp LCTRL        &none         &none                  &none       &none &none &none &kp RET &none             &kp UP   &kp DOWN &kp LCTRL   &kp RSHFT     &none
     >;
   };
   osx_func_layer { // OSX_FN 12
@@ -357,7 +355,7 @@
       &none         &kp C_STOP &kp C_PREV   &kp C_PP      &kp C_NEXT   &kp C_BRI_UP                                               &kp F12 &kp F7 &kp F8   &kp F9 &kp CAPS &none
       &none         &sk LALT   &sk LGUI     &sk LSHFT     &sk LCTRL    &sk C_BRI_DN                                               &kp F11 &kp F4 &kp F5   &kp F6 &kp L1   &none
       &kp LSHIFT    &kp C_MUTE &kp C_VOL_DN &kp LG(C)     &kp C_VOL_UP &kp LG(V)  &to OSX_L0 &none &none &none &none   &none    &kp F10 &kp F1 &kp F2   &kp F3 &to L0   &none
-      &none         &none      &none        &none         &kp TAB                   &none      &none &none &none &kp RET &none            &kp UP &kp DOWN &none  &none    &none
+      &none         &kp LSHFT  &kp LCTRL        &none         &kp TAB                   &none      &none &none &none &kp RET &none            &kp UP &kp DOWN &kp LCTRL   &kp RSHFT    &none
     >;
   };
   osx_sym_layer { // OSX_SYM 13
@@ -367,7 +365,7 @@
       &none  &osx_dv_8     &osx_dv_alpha  &kp LS(N3)      &osx_dv_dlr  &kp LS(N5)                                                &osx_dv_9         &osx_dv_ticks &kp LS(COMMA)   &kp LS(DOT) &osx_dv_4                 &none
       &none  &sk LALT      &sk LGUI       &sk LSHFT       &sk LCTRL    &kp LS(RBKT)                                              &osx_dv_0         &osx_dv_1     &osx_dv_5       &osx_dv_7   &kp GRAVE                 &none
       &none  &kp LS(MINUS) &kp LS(N7)     &kp LS(RA(N7))  &kp LS(N7)   &kp LS(N6)  &to OSX_L0 &none &none &none &none   &none    &undead_tilde     &osx_dv_2     &osx_dv_3       &osx_dv_6   &kp LS(GRAVE)             &none
-      &none  &none         &none          &none           &none                    &none      &none &none &none &kp RET &none                      &kp UP        &kp DOWN        &kp LG(C)   &kp LG(V)                 &none
+      &none  &kp LSHFT  &kp LCTRL          &none           &none                    &none      &none &none &none &kp RET &none                      &kp UP        &kp DOWN        &kp LG(C)   &kp LG(V)                 &none
     >;
   };
   osx_symbol_layer { // OSX_L1 14
